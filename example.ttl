@@ -1,0 +1,24 @@
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+prefix foaf:   <http://xmlns.com/foaf/0.1/>
+
+:item23 schema:name  "Weaving the web" ;
+        schema:author :timBL           ;
+        :related :item24, :item25      .
+
+:timBL  schema:name  "Tim Berners-Lee" ;
+        schema:birthPlace :London ;
+        schema:birthDate "1955-06-08"^^xsd:date .
+
+:item24 schema:name  "Validating RDF Data" ;
+        schema:author :jelg, :ericP, :iovka, :jimkont .
+
+:item25 schema:name "Learning SPARQL" ;
+        schema:author :bobdc          .
+
+:jelg   schema:name "Jose Emilio Labra Gayo" .
+:ericP  schema:name "Eric Prud'hommeaux" .
+:jimkont schema:name "Dimitris Kontokostas" .
+:iovka   schema:name "Iovka Boneva" .
+:bobdc   schema:name "Bob Ducharme" .
